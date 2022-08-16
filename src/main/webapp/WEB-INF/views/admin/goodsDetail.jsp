@@ -49,6 +49,8 @@ body {
 	</video>
 
 
+
+
 	<div class="admin_content_wrap">
 		<div class="admin_content_subject">
 			<span>상품 상세</span>
@@ -60,7 +62,7 @@ body {
 
 			<div class="admin_content_main">
 
-				<div class="inputText">
+				<div class="inputText1">
 					<label class="menuText">ship 제목</label>
 				</div>
 				<div class="inputbox">
@@ -69,7 +71,7 @@ body {
 				</div>
 
 
-				<div class="inputText">
+				<div class="inputText2">
 					<label class="menuText">ship 가격</label>
 				</div>
 				<div class="inputbox">
@@ -79,7 +81,7 @@ body {
 
 
 
-				<div class="inputText">
+				<div class="inputText3">
 					<label class="menuText">ship 재고</label>
 				</div>
 				<div class="inputbox">
@@ -88,18 +90,11 @@ body {
 				</div>
 
 
-				<div class="inputText">
-
-					<label class="menuText">ship 소개</label>
-				</div>
-				<div class="areaBox">
-					<textarea class="inputTagLarge" name="shipIntro"
-						id="shipIntro_textarea" disabled>${goodsInfo.shipIntro}</textarea>
-				</div>
 
 
 
-				<div class="inputText">
+
+				<div class="inputText5">
 					<label class="menuText">등록 날짜</label>
 				</div>
 				<div class="inputbox">
@@ -110,7 +105,7 @@ body {
 
 
 
-				<div class="inputText">
+				<div class="inputText6">
 					<label class="menuText">최근 수정 날짜</label>
 				</div>
 				<div class="inputbox">
@@ -119,15 +114,52 @@ body {
 						disabled>
 				</div>
 
+
+				<div class="inputText4">
+
+					<label class="menuText">ship 소개</label>
+				</div>
+				<div class="areaBox">
+					<textarea class="inputTagLarge" name="shipIntro"
+						id="shipIntro_textarea" disabled>${goodsInfo.shipIntro}</textarea>
+				</div>
+
 			</div>
 
 
 
 
-			<div class="btn_section">
-				<button id="cancelBtn" class="btn">상품 목록</button>
-				<button id="modifyBtn" class="btn enroll_btn">수정</button>
+
+			 	<button id="cancelBtn" class="returnBtn">목록</button> 
+
+			<button id="modifyBtn" class="sujungBtn">수정</button> 
+
+			<!-- <div class="neon_effect">
+				<button id="cancelBtn" class="mainBtn1">
+					<div class="back">
+						<a href="/adminMenu/goodsManage" class="btn btn--1"><p
+								class="btnText">상품 목록</p></a>
+
+					</div>
+				</button>
 			</div>
+
+			<div class="neon_effect">
+				<button id="cancelBtn" class="mainBtn2">
+					<div class="back">
+						<a href="/adminMenu/goodsManage" class="btn btn--1"><p
+								class="btnText">수정</p></a>
+
+					</div>
+				</button>
+			</div>
+ -->
+
+
+
+
+
+
 		</div>
 
 		<div class="imgCont">
@@ -168,7 +200,7 @@ body {
 												if (arr.length === 0) {
 													let str = "";
 													str += "<div id='result_card'>";
-													str += "<img src='/resources/image/goodsNoImage.png'>";
+													str += "<img  src='/resources/image/goodsNoImage.png'>";
 													str += "</div>";
 
 													uploadReslut.html(str);
